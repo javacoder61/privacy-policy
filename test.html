@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="0; url=https://mkiziltay.epizy.com/">
+        <script type="text/javascript">
+            window.location.href = "https://mkiziltay.epizy.com/"
+        </script>
+        <title>Page Redirection</title>
+    </head>
+    <body>
+       <?php
+if($_POST){ // kayıt ol butonuna tıklandığında : https://mkiziltay.epizy.com/suggestion/newmeal.php?name=**MEALNAME**&ing=**INGREDIENTS**&note=**NOTES**
+
+    $mealName = $_POST["name"];
+    $ingredients = $_POST["ing"];
+    $notes = $_POST["note"];
+
+    $pattern = '/[^a-z0-9]+/i';
+    $ingredients = preg_replace('/[^a-z0-9]+/i',",",$ingredients);
+    echo "<br>";
+    echo $ingredients;
+
+    
+        
+}
+?>
+    </body>
+</html>
