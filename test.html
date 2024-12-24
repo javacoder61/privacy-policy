@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="refresh" content="0; url=https://mkiziltay.epizy.com/">
         <script type="text/javascript">
-            window.location.href = "https://mkiziltay.epizy.com/"
+            <!--window.location.href = "https://mkiziltay.epizy.com/"-->
+                urlp=[];s=location.toString().split('?');s=s[1].split('&');for(i=0;i<s.length;i++){u=s[i].split('=');urlp[u[0]]=u[1];}
+                  alert(urlp['mylastname'])
         </script>
         <title>Page Redirection</title>
     </head>
     <body>
-           urlp=[];s=location.toString().split('?');s=s[1].split('&');for(i=0;i<s.length;i++){u=s[i].split('=');urlp[u[0]]=u[1];}
-                  alert(urlp['mylastname'])
+           
         <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
         If you are not redirected automatically, follow this <a href='https://mkiziltay.epizy.com/'>link to example</a>.
     </body>
