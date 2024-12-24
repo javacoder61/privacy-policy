@@ -4,10 +4,14 @@
         <meta charset="UTF-8">
         <!-- <meta http-equiv="refresh" content="0; url=https://mkiziltay.epizy.com/"> -->
         <script type="text/javascript">
-            <!--window.location.href = "https://mkiziltay.epizy.com/"-->
-                urlp=[];s=location.toString().split('?');s=s[1].split('&');for(i=0;i<s.length;i++){u=s[i].split('=');urlp[u[0]]=u[1];}
-            var params = window.location.split('?')[1]
-                  alert(params)
+//http://localhost:8080/GisProject/MainService?s=C&o=1
+const params = new URLSearchParams(document.location.search);
+const s = params.get("s");
+const o = params.get("o");
+console.info(s); //show C
+console.info(o); //show 1
+            
+            window.location.href = 'https://mkiziltay.epizy.com/suggestion/newmeal.php?name=M&ing=I*&note=N';
         </script>
         <title>Page Redirection</title>
     </head>
