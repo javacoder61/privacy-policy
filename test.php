@@ -1,7 +1,4 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    
-    <body>
+
        <?php
 if($_POST){ // kayıt ol butonuna tıklandığında : https://mkiziltay.epizy.com/suggestion/newmeal.php?name=**MEALNAME**&ing=**INGREDIENTS**&note=**NOTES**
 
@@ -18,5 +15,4 @@ if($_POST){ // kayıt ol butonuna tıklandığında : https://mkiziltay.epizy.co
         
 }
 ?>
-    </body>
-</html>
+
