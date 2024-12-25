@@ -18,8 +18,9 @@ if(isset( $_POST['val'])){
  $connect=mysqli_connect($url,$user,$pass,$dbname);
 
 $result="SELECT name,ing,note FROM defaultdb where id=$value";
+$query="INSERT INTO `defaultdb`.`meals` ( `name`, `ing`, `note`) VALUES ( 'abc', 'abc', 'abc')";
 
- $sql=mysqli_query($connect,$result);
+ $sql=mysqli_query($connect,$query);
 
 
  while($row=mysqli_fetch_assoc($sql) ){
@@ -27,9 +28,9 @@ $result="SELECT name,ing,note FROM defaultdb where id=$value";
      $num++;
      $items[$value] = array(
 
-      'email' => $row['email'],
-      'pass' => $row['pass'],
-      'perm' => $row['permission']
+      'name' => $row['name'],
+      'ing' => $row['ing'],
+      'note' => $row['note']
 
 
   );
