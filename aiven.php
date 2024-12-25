@@ -1,4 +1,7 @@
-<?php
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+      <?php
 
 $uri = "mysql://avnadmin:AVNS_z3JFM2zwSiYjCLfzjiA@mysql-db101-meals.d.aivencloud.com:28690/defaultdb?ssl-mode=REQUIRED";
 
@@ -20,3 +23,11 @@ try {
   echo "Error: " . $e->getMessage();
   echo $fields["host"];
 }
+  ?>
+    </head>
+    <body>
+        If you are not redirected automatically, follow this <a href='https://mkiziltay.epizy.com/'>link to example</a>.
+    </body>
+</html>
+
+
