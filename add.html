@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <!-- <meta http-equiv="refresh" content="0; url=https://mkiziltay.epizy.com/"> -->
         <script type="text/javascript">
+            const BASE_URL = 'https://kalori.tiiny.io/';
 //https://javacoder61.github.io/privacy-policy/add.html?s=abc&o=def&k=ghi
 const params = new URLSearchParams(document.location.search);// location.search = after ? symbol
 const s = params.get("s");
@@ -13,7 +14,7 @@ console.info(s); //show C
 console.info(o); //show 1
 console.info(k); //show S
             
-            window.location.href = 'https://mkiziltay.epizy.com/suggestion/newmeal.php?name='+s+'&ing='+o+'&note='+k;
+            window.location.href = BASE_URL+'?name='+s+'&ing='+o+'&note='+k;
             
         </script>
         <title>Page Redirection</title>
